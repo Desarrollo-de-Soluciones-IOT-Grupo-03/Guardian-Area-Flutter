@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:guardian_area/config/config.dart';
-import 'package:guardian_area/config/router/app_router.dart';
+import 'package:guardianarea/config/config.dart';
+import 'package:guardianarea/config/router/app_router.dart';
 
 void main() async {
   await Environment.initEnvironment();
@@ -18,6 +18,8 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final appRouter = ref.watch(goRouterProvider);
+
     return MaterialApp.router(
       routerConfig: appRouter,
       theme: AppTheme().getTheme(),
