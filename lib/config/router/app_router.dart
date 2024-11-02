@@ -1,18 +1,17 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:guardianarea/config/router/app_router_notifier.dart';
-import 'package:guardianarea/features/activities/presentation/screens/screens.dart';
-import 'package:guardianarea/features/auth/presentation/providers/auth_provider.dart';
-import 'package:guardianarea/features/auth/presentation/screens/screens.dart';
-import 'package:guardianarea/features/chat/presentation/screens/screens.dart';
-import 'package:guardianarea/features/devices/presentation/screens/screens.dart';
-import 'package:guardianarea/features/geofences/presentation/screens/screens.dart';
-import 'package:guardianarea/features/home/presentation/screens/screens.dart';
-import 'package:guardianarea/features/navigation/presentation/screens/main_screen.dart';
-import 'package:guardianarea/features/profile/presentation/screens/screens.dart';
-import 'package:guardianarea/features/settings/presentation/screens/screens.dart';
-import 'package:guardianarea/features/vital-signs/presentation/screens/screens.dart';
-
+import 'package:guardian_area/config/router/app_router_notifier.dart';
+import 'package:guardian_area/features/activities/presentation/screens/screens.dart';
+import 'package:guardian_area/features/auth/presentation/providers/auth_provider.dart';
+import 'package:guardian_area/features/auth/presentation/screens/screens.dart';
+import 'package:guardian_area/features/chat/presentation/screens/screens.dart';
+import 'package:guardian_area/features/devices/presentation/screens/screens.dart';
+import 'package:guardian_area/features/geofences/presentation/screens/screens.dart';
+import 'package:guardian_area/features/home/presentation/screens/screens.dart';
+import 'package:guardian_area/features/navigation/presentation/screens/main_screen.dart';
+import 'package:guardian_area/features/profile/presentation/screens/screens.dart';
+import 'package:guardian_area/features/settings/presentation/screens/screens.dart';
+import 'package:guardian_area/features/vital-signs/presentation/screens/screens.dart';
 
 final goRouterProvider = Provider((ref) {
   final goRouterNotifier = ref.read(goRouterNotifierProvider);
