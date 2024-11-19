@@ -1,8 +1,7 @@
-import 'package:guardianarea/shared/infrastructure/services/key_value_storage_service.dart';
+import 'package:guardian_area/shared/infrastructure/services/key_value_storage_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class KeyValueStorageServiceImpl extends KeyValueStorageService {
-  
   Future<SharedPreferences> getSharedPrefs() async {
     return await SharedPreferences.getInstance();
   }
