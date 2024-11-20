@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:guardianarea/features/navigation/presentation/widgets/custom_app_bar.dart';
-import 'package:guardianarea/features/navigation/presentation/widgets/custom_bottom_nav_bar.dart';
+import 'package:guardian_area/features/navigation/presentation/widgets/custom_app_bar.dart';
+import 'package:guardian_area/features/navigation/presentation/widgets/custom_bottom_nav_bar.dart';
 
 class MainScreen extends ConsumerWidget {
-  final Widget child; // Agregamos child como parámetro
+  final Widget child;
 
   const MainScreen({super.key, required this.child});
 
